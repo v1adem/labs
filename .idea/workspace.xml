@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Complete lab_1 and tests" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Complete 1 lab and tests">
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_1/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +24,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lab_1" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2W1cSAX5TlmnCDIdVK6wk6eaD8H" />
   <component name="ProjectLevelVcsManager">
@@ -39,10 +46,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "lab__1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/JAVA/labs/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -59,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695903525255</updated>
       <workItem from="1695903526680" duration="4818000" />
+      <workItem from="1695908386072" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1695903855558</created>
@@ -74,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695908013850</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1695908455209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695908455209</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Complete 1 lab and tests">
+      <created>1695908516548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695908516548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +118,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Complete lab_1 and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete lab_1 and tests" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Complete 1 lab and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete 1 lab and tests" />
   </component>
 </project>
