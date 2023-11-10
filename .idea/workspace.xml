@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="3rd lab done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_4_1/Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_4_1/PalindromeTest.java" afterDir="false" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="4-1 lab Readme.md done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/Coder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/Decoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_4_2/CoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_4_2/DecoderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab_3" />
+        <entry key="$PROJECT_DIR$" value="lab_4-1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,8 +52,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab__4-1",
-    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_3",
+    "git-widget-placeholder": "lab__4-2",
+    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_4_1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,10 +64,16 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JAVA\labs\src\main\java\org\example\lab_4_1" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_3" />
     </key>
   </component>
@@ -82,7 +90,7 @@
       <workItem from="1696106997858" duration="6287000" />
       <workItem from="1696599808937" duration="6595000" />
       <workItem from="1698787989650" duration="2653000" />
-      <workItem from="1699634269076" duration="7169000" />
+      <workItem from="1699634269076" duration="14949000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1695903855558</created>
@@ -133,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699637247034</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="4-1 lab done">
+      <created>1699641791274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641791274</updated>
+    </task>
+    <task id="LOCAL-00009" summary="4-1 lab Readme.md done">
+      <created>1699642040891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699642040891</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +192,8 @@
     <MESSAGE value="Updated main README.MD" />
     <MESSAGE value="inited 3rd lab \ refactored test directory" />
     <MESSAGE value="3rd lab done" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd lab done" />
+    <MESSAGE value="4-1 lab done" />
+    <MESSAGE value="4-1 lab Readme.md done" />
+    <option name="LAST_COMMIT_MESSAGE" value="4-1 lab Readme.md done" />
   </component>
 </project>

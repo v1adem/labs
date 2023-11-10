@@ -15,5 +15,5 @@
 
 **Під час виконання лабораторної роботи я здобув навички роботи зі строками у Java**
 
-[Status]: Palindrome.java
-[тести]: ../../../../../test/java/org/example/lab_4_1/PalindromeTest.java
+[isPalindrome]: Palindrome.java
+[тестами]: ../../../../../test/java/org/example/lab_4_1/PalindromeTest.java
