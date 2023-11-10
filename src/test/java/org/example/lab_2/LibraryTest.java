@@ -1,4 +1,4 @@
-package lab_2;
+package org.example.lab_2;
 
 import org.example.lab_2.Book;
 import org.example.lab_2.Library;
