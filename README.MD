@@ -11,3 +11,5 @@
 [Лабораторна робота №3](src/main/java/org/example/lab_3/README.MD)
 
 [Лабораторна робота №4_1](src/main/java/org/example/lab_4_1/README.MD)
+
+[Лабораторна робота №4_2](src/main/java/org/example/lab_4_2/README.MD)
