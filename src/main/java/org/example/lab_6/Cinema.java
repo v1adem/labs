@@ -1,5 +1,8 @@
 package org.example.lab_6;
 
+import org.example.lab_2.IManageable;
+import org.example.lab_6.exceptions.InvalidCinemaParameters;
+
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -11,27 +14,27 @@ public class Cinema {
         cinema = new int[halls][rows][seats];
     }
 
-    public boolean bookSeats(int hallNumber, int rowNumber, int[] seats){
-        if(hallNumber > cinema.length || rowNumber > cinema[0].length){
-            return false;
+    public boolean bookSeats(int hallNumber, int rowNumber, int[] seats) throws InvalidCinemaParameters {
+        if(hallNumber > cinema.length || rowNumber > cinema[0].length || seats.length > cinema[0][0].length){
+            throw new InvalidCinemaParameters("There are no such Hall/Row/Seats");
         }
 
         Arrays.stream(seats).forEach(seat -> cinema[hallNumber][rowNumber][seat] = 1);
         return true;
     }
 
-    public boolean cancelBooking(int hallNumber, int rowNumber, int[] seats){
-        if(hallNumber > cinema.length || rowNumber > cinema[0].length){
-            return false;
+    public boolean cancelBooking(int hallNumber, int rowNumber, int[] seats) throws InvalidCinemaParameters {
+        if(hallNumber > cinema.length || rowNumber > cinema[0].length || seats.length > cinema[0][0].length){
+            throw new InvalidCinemaParameters("There are no such Hall/Row/Seats");
         }
 
         Arrays.stream(seats).forEach(seat -> cinema[hallNumber][rowNumber][seat] = 0);
         return true;
     }
 
-    public boolean checkAvailability(int screen, int numSeats) {
+    public boolean checkAvailability(int screen, int numSeats) throws InvalidCinemaParameters {
         if(screen > cinema.length || numSeats > cinema[0][0].length){
-            return false;
+            throw new InvalidCinemaParameters("There are no such Hall/Seats");
         }
         for (int row = 0; row < cinema[0].length; row++){
             row: for(int fp = 0; fp < cinema[screen][row].length - numSeats; fp++){
@@ -47,18 +50,43 @@ public class Cinema {
         return false;
     }
 
-    public void printSeatingArrangement(int hallNumber){
-        //TODO
+    public void printSeatingArrangement(int hallNumber) throws InvalidCinemaParameters {
+        if (hallNumber > cinema.length){
+            throw new InvalidCinemaParameters("There are no such Hall");
+        }
+        System.out.print("\t\t");
+        for(int i = 0; i < cinema[hallNumber][0].length; i++) {
+            System.out.print(i+1 + "\t");
+        }
+        System.out.println();
+        for (int row = 1; row <= cinema[hallNumber].length; row++) {
+            if(row >= 10) {
+                System.out.print("   ");
+            }
+            else {
+                System.out.print("\t");
+            }
+            System.out.print(row + " |");
+            for(int seat: cinema[hallNumber][row-1]) {
+                System.out.print("\t" + seat);
+            }
+            System.out.println(" | " + row);
+        }
+        System.out.print("\t\t");
+        for(int i = 0; i < cinema[hallNumber][0].length; i++) {
+            System.out.print(i+1 + "\t");
+        }
     }
 
-    public Optional<int[]> findBestAvailable(int hallNumber, int numSeats){
+    public Optional<RowAndSeats> findBestAvailable(int hallNumber, int numSeats) throws InvalidCinemaParameters {
         if(hallNumber > cinema.length || numSeats > cinema[0][0].length){
-            return Optional.empty();
+            throw new InvalidCinemaParameters("There are no such Hall/Row/Seats");
         }
         int outerMid = cinema[0][0].length / 2;
 
         int minDiff = Integer.MAX_VALUE;
         int resultIndex = -1;
+        int resultRow = -1;
 
         for(int row = 0; row < cinema[0].length; row++){
             int[] outerSeats = cinema[hallNumber][row];
@@ -73,6 +101,7 @@ public class Cinema {
                 if (diff < minDiff) {
                     minDiff = diff;
                     resultIndex = i;
+                    resultRow = row;
                 }
             }
         }
@@ -81,7 +110,7 @@ public class Cinema {
             for (int i = 0; i < bestSeats.length; i++) {
                 bestSeats[i] = resultIndex++;
             }
-            return Optional.of(bestSeats);
+            return Optional.of(new RowAndSeats(bestSeats, resultRow));
         }
         return Optional.empty();
     }
@@ -93,5 +122,14 @@ public class Cinema {
             }
         }
         return true;
+    }
+
+    public boolean autoBook(int hallNumber, int numSeats) throws InvalidCinemaParameters {
+        if (findBestAvailable(hallNumber, numSeats).isPresent()){
+            RowAndSeats bestSeats = findBestAvailable(hallNumber, numSeats).get();
+            bookSeats(hallNumber, bestSeats.getRow(), bestSeats.getSeats());
+            return true;
+        }
+        return false;
     }
 }

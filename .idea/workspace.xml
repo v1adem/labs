@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Updated main README.MD">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/exceptions/AccountNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/exceptions/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/exceptions/NegativeAmountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_5/BankTest.java" afterDir="false" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/RowAndSeats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/exceptions/InvalidCinemaParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,36 +46,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab__5",
-    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_5",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/JAVA/labs/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab__6&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JAVA/labs/src/main/java/org/example/lab_5&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/JAVA/labs/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_5" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_4_1" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_3" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.lab_6" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -96,6 +96,8 @@
       <workItem from="1698787989650" duration="2653000" />
       <workItem from="1699634269076" duration="14949000" />
       <workItem from="1699699749691" duration="5033000" />
+      <workItem from="1699821437798" duration="8870000" />
+      <workItem from="1699886233226" duration="3471000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1695903855558</created>
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699652616939</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing">
+      <created>1699831797600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699831797600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +215,7 @@
     <MESSAGE value="4-1 lab done" />
     <MESSAGE value="4-1 lab Readme.md done" />
     <MESSAGE value="Updated main README.MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated main README.MD" />
+    <MESSAGE value="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing" />
   </component>
 </project>
