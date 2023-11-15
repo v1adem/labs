@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/RowAndSeats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/exceptions/InvalidCinemaParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" afterDir="false" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="lab 5 added InvalidCinemaParameters exception \ added autobook()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/RowAndSeats.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,8 @@
       <workItem from="1699634269076" duration="14949000" />
       <workItem from="1699699749691" duration="5033000" />
       <workItem from="1699821437798" duration="8870000" />
-      <workItem from="1699886233226" duration="3471000" />
+      <workItem from="1699886233226" duration="4850000" />
+      <workItem from="1700077294757" duration="1971000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1695903855558</created>
@@ -176,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699831797600</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lab 5 added InvalidCinemaParameters exception \ added autobook()">
+      <created>1699890060606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699890060606</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +221,7 @@
     <MESSAGE value="4-1 lab Readme.md done" />
     <MESSAGE value="Updated main README.MD" />
     <MESSAGE value="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing" />
+    <MESSAGE value="lab 5 added InvalidCinemaParameters exception \ added autobook()" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 5 added InvalidCinemaParameters exception \ added autobook()" />
   </component>
 </project>
