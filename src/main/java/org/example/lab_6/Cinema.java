@@ -2,8 +2,6 @@ package org.example.lab_6;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
-import org.example.lab_2.IManageable;
 import org.example.lab_6.exceptions.InvalidCinemaParameters;
 
 import java.util.Arrays;
@@ -61,7 +59,7 @@ public class Cinema {
 
         System.out.print("  Seats: ");
         for (int i = 1; i <= cinema[hallNumber][0].length; i++) {
-            System.out.print(String.format("%2s ", i));
+            System.out.printf("%2s ", i);
         }
         System.out.println();
 
@@ -77,7 +75,7 @@ public class Cinema {
     //cinema[hallNumber]
     public Optional<RowAndSeats> findBestAvailable(int hallNumber, int numSeats) throws InvalidCinemaParameters {
         if (hallNumber > cinema.length || numSeats > cinema[0][0].length) {
-            throw new InvalidCinemaParameters("There are no such Hall/Row/Seats");
+            throw new InvalidCinemaParameters("There are no such Hall/Seats");
         }
         int outerMid = cinema[0][0].length / 2;
 
@@ -132,7 +130,7 @@ public class Cinema {
 
     @Getter
     @AllArgsConstructor
-    private static class RowAndSeats {
+    static class RowAndSeats {
         private int[] seats;
         private int row;
     }
