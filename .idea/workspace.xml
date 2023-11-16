@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Product.java added">
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Order.java added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/exceptions/ItemNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/exceptions/NegativeStockException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/ECommercePlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/ECommercePlatform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700145397335</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Order.java added">
+      <created>1700147067474</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700147067474</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +274,7 @@
     <MESSAGE value="Inited 6 lab" />
     <MESSAGE value="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart" />
     <MESSAGE value="Product.java added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product.java added" />
+    <MESSAGE value="Order.java added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order.java added" />
   </component>
 </project>
