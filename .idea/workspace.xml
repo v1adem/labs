@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart">
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Product.java added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700145074218</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Product.java added">
+      <created>1700145397335</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145397335</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +263,7 @@
     <MESSAGE value="Added Tests" />
     <MESSAGE value="Inited 6 lab" />
     <MESSAGE value="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart" />
+    <MESSAGE value="Product.java added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product.java added" />
   </component>
 </project>
