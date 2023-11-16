@@ -16,7 +16,9 @@ public class Cinema {
     }
 
     public boolean bookSeats(int hallNumber, int rowNumber, int[] seats) throws InvalidCinemaParameters {
-        if (hallNumber > cinema.length || rowNumber > cinema[0].length || seats.length > cinema[0][0].length) {
+        if (hallNumber > cinema.length || rowNumber > cinema[0].length
+                || seats.length > cinema[0][0].length
+                || Arrays.stream(seats).anyMatch(seat -> seat >= cinema[hallNumber][rowNumber].length)) {
             throw new InvalidCinemaParameters("There are no such Hall/Row/Seats");
         }
 
@@ -25,7 +27,9 @@ public class Cinema {
     }
 
     public boolean cancelBooking(int hallNumber, int rowNumber, int[] seats) throws InvalidCinemaParameters {
-        if (hallNumber > cinema.length || rowNumber > cinema[0].length || seats.length > cinema[0][0].length) {
+        if (hallNumber > cinema.length || rowNumber > cinema[0].length
+                || seats.length > cinema[0][0].length
+                || Arrays.stream(seats).anyMatch(seat -> seat >= cinema[hallNumber][rowNumber].length)) {
             throw new InvalidCinemaParameters("There are no such Hall/Row/Seats");
         }
 
