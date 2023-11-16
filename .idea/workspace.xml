@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Added Tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/README.MD" afterDir="false" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Inited 6 lab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab__6",
+    "git-widget-placeholder": "lab__7",
     "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -200,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700088569196</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Inited 6 lab">
+      <created>1700143809765</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700143809765</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +246,7 @@
     <MESSAGE value="lab 5 added InvalidCinemaParameters exception \ added autobook()" />
     <MESSAGE value="Updated printSeatingArrangement() \ findBestAvailable()" />
     <MESSAGE value="Added Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tests" />
+    <MESSAGE value="Inited 6 lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inited 6 lab" />
   </component>
 </project>
