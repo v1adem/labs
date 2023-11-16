@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Inited 6 lab">
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700143809765</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart">
+      <created>1700145074218</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145074218</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +254,7 @@
     <MESSAGE value="Updated printSeatingArrangement() \ findBestAvailable()" />
     <MESSAGE value="Added Tests" />
     <MESSAGE value="Inited 6 lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inited 6 lab" />
+    <MESSAGE value="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart" />
   </component>
 </project>
