@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Updated main README.MD">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/exceptions/AccountNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/exceptions/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_5/exceptions/NegativeAmountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_5/BankTest.java" afterDir="false" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Added Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_4_2/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +52,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab__5",
-    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_5",
+    "git-widget-placeholder": "lab__6",
+    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,9 +73,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JAVA\labs\src\main\java\org\example\lab_6" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_5" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_4_1" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_3" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.lab_6" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -96,6 +97,10 @@
       <workItem from="1698787989650" duration="2653000" />
       <workItem from="1699634269076" duration="14949000" />
       <workItem from="1699699749691" duration="5033000" />
+      <workItem from="1699821437798" duration="8870000" />
+      <workItem from="1699886233226" duration="4850000" />
+      <workItem from="1700077294757" duration="6006000" />
+      <workItem from="1700140750168" duration="2594000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1695903855558</created>
@@ -167,7 +172,35 @@
       <option name="project" value="LOCAL" />
       <updated>1699652616939</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing">
+      <created>1699831797600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699831797600</updated>
+    </task>
+    <task id="LOCAL-00012" summary="lab 5 added InvalidCinemaParameters exception \ added autobook()">
+      <created>1699890060606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699890060606</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated printSeatingArrangement() \ findBestAvailable()">
+      <created>1700084485178</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700084485178</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added Tests">
+      <created>1700088569196</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700088569196</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +239,10 @@
     <MESSAGE value="4-1 lab done" />
     <MESSAGE value="4-1 lab Readme.md done" />
     <MESSAGE value="Updated main README.MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated main README.MD" />
+    <MESSAGE value="Inited 5 lab \ added class Cinema.java \ methods bookSeats(), cancelBooking(), checkAvailability(), findBestAvailable() \ findBestAvailable() needs testing" />
+    <MESSAGE value="lab 5 added InvalidCinemaParameters exception \ added autobook()" />
+    <MESSAGE value="Updated printSeatingArrangement() \ findBestAvailable()" />
+    <MESSAGE value="Added Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tests" />
   </component>
 </project>
