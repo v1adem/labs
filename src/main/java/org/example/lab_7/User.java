@@ -43,6 +43,6 @@ public class User {
     }
 
     public void updateHistory(@NonNull Order order){
-        // todo
+        order.getOrderDetails().forEach((product, amount) -> history.merge(product, amount, Integer::sum));
     }
 }
