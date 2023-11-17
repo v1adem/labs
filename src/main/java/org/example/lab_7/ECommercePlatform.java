@@ -8,7 +8,6 @@ import javax.management.InstanceAlreadyExistsException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class ECommercePlatform {
     private final Map<Integer, User> users = new HashMap<>();
