@@ -34,6 +34,9 @@ public class ECommerceDemo {
         System.out.println("\nList of products:");
         platform.getListOfProducts().forEach(System.out::println);
 
+        System.out.println("\nList of available products:");
+        platform.getListOfAvailableProducts().forEach(System.out::println);
+
         System.out.println("\nList of orders:");
         platform.getListOfOrders().forEach(System.out::println);
 
