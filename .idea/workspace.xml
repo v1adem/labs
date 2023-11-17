@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Added Tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/README.MD" afterDir="false" />
+    <list default="true" id="73976e88-8f8e-4a54-96a0-35c7c154f1fb" name="Changes" comment="Added makeRecommendations() and minor changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_7/ECommercePlatformTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_6/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/lab_6/CinemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab_7/ECommerceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab_7/ECommerceDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +50,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab__6",
-    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_6",
+    "git-widget-placeholder": "lab__7",
+    "last_opened_file_path": "C:/JAVA/labs/src/main/java/org/example/lab_7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,7 +70,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.lab_7" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JAVA\labs\src\main\java\org\example\lab_7" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_6" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_5" />
       <recent name="C:\JAVA\labs\src\main\java\org\example\lab_4_1" />
@@ -81,6 +83,45 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.lab_6" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ECommercePlatformTest">
+    <configuration name="ECommercePlatformTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.lab_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.lab_7" />
+      <option name="MAIN_CLASS_NAME" value="org.example.lab_7.ECommercePlatformTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ECommercePlatformTest.getProductById_ShouldThrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.lab_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.lab_7" />
+      <option name="MAIN_CLASS_NAME" value="org.example.lab_7.ECommercePlatformTest" />
+      <option name="METHOD_NAME" value="getProductById_ShouldThrow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ECommercePlatformTest" />
+        <item itemvalue="JUnit.ECommercePlatformTest.getProductById_ShouldThrow" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,6 +142,7 @@
       <workItem from="1699886233226" duration="4850000" />
       <workItem from="1700077294757" duration="6006000" />
       <workItem from="1700140750168" duration="2594000" />
+      <workItem from="1700186545410" duration="7624000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1695903855558</created>
@@ -200,7 +242,112 @@
       <option name="project" value="LOCAL" />
       <updated>1700088569196</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Inited 6 lab">
+      <created>1700143809765</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700143809765</updated>
+    </task>
+    <task id="LOCAL-00016" summary="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart">
+      <created>1700145074218</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145074218</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Product.java added">
+      <created>1700145397335</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145397335</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Order.java added">
+      <created>1700147067474</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700147067474</updated>
+    </task>
+    <task id="LOCAL-00019" summary="User.java added method updateHistory()">
+      <created>1700156006770</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156006770</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Product.java added method reduceStock()">
+      <created>1700156039778</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156039778</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added NegativeStockException">
+      <created>1700156068273</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156068273</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added ItemNotFoundException">
+      <created>1700156079951</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156079951</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ECommercePlatform.java added gettersById / adders for User and Product / makeOrder() method / getters for List&lt;&gt; of users, products, available products, orders">
+      <created>1700156225914</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156225914</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updated toString()">
+      <created>1700188285146</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1700188285146</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Deleted unrequired dependency">
+      <created>1700188367957</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700188367957</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added comparators for sorting Products by Name and Stock">
+      <created>1700188403483</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1700188403483</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Imitated workflow of ECommercePlatform">
+      <created>1700188434870</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700188434870</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added makeRecommendations() and minor changes">
+      <created>1700188495802</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1700188495802</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added makeRecommendations() and minor changes">
+      <created>1700188511286</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1700188511286</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,8 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Init commit" />
-    <MESSAGE value="Complete lab_1 and tests" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Complete 1 lab and tests" />
     <MESSAGE value="inited 3rd lab \ refactored test directory" />
@@ -243,6 +388,35 @@
     <MESSAGE value="lab 5 added InvalidCinemaParameters exception \ added autobook()" />
     <MESSAGE value="Updated printSeatingArrangement() \ findBestAvailable()" />
     <MESSAGE value="Added Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tests" />
+    <MESSAGE value="Inited 6 lab" />
+    <MESSAGE value="User.java added func for add and remove Products into and from User.Cart / func for modify and clear User.Cart" />
+    <MESSAGE value="Product.java added" />
+    <MESSAGE value="Order.java added" />
+    <MESSAGE value="User.java added method updateHistory()" />
+    <MESSAGE value="Product.java added method reduceStock()" />
+    <MESSAGE value="Added NegativeStockException" />
+    <MESSAGE value="Added ItemNotFoundException" />
+    <MESSAGE value="ECommercePlatform.java added gettersById / adders for User and Product / makeOrder() method / getters for List&lt;&gt; of users, products, available products, orders" />
+    <MESSAGE value="Updated toString()" />
+    <MESSAGE value="Deleted unrequired dependency" />
+    <MESSAGE value="Added comparators for sorting Products by Name and Stock" />
+    <MESSAGE value="Imitated workflow of ECommercePlatform" />
+    <MESSAGE value="Added makeRecommendations() and minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added makeRecommendations() and minor changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.example.lab_7.User" memberName="cart" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
