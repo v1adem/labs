@@ -8,28 +8,28 @@ import javax.management.InstanceAlreadyExistsException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class ECommercePlatform {
     private final Map<Integer, User> users = new HashMap<>();
     private final Map<Integer, Product> products = new HashMap<>();
     private final Map<Integer, Order> orders = new HashMap<>();
 
-    public User getUserById(int id) throws ItemNotFoundException {
+    public User getUserById(@NonNull Integer id) throws ItemNotFoundException {
         if (users.containsKey(id)) {
             return users.get(id);
         }
         throw new ItemNotFoundException("User not found | id: " + id);
     }
 
-    public Product getProductById(int id) throws ItemNotFoundException {
+    public Product getProductById(@NonNull Integer id) throws ItemNotFoundException {
         if (products.containsKey(id)) {
             return products.get(id);
         }
         throw new ItemNotFoundException("Product not found | id: " + id);
     }
 
-    public Order getOrderById(int id) throws ItemNotFoundException {
+    public Order getOrderById(@NonNull Integer id) throws ItemNotFoundException {
         if (orders.containsKey(id)) {
             return orders.get(id);
         }
@@ -53,20 +53,18 @@ public class ECommercePlatform {
         return user;
     }
 
-    public Order makeOrder(int userId) throws ItemNotFoundException {
+    public Order makeOrder(@NonNull Integer userId) throws ItemNotFoundException, NegativeStockException {
         User user = getUserById(userId);
         Order order = new Order(orders.size(), user.getId(), user.getCart());
 
         user.clearCart();
         user.updateHistory(order);
 
-        order.getOrderDetails().forEach((product, amount) -> {
-            try {
-                product.reduceStock(amount);
-            } catch (NegativeStockException e) {
-                throw new RuntimeException(e);
-            }
-        });
+        for (Map.Entry<Product, Integer> entry : order.getOrderDetails().entrySet()) {
+            Product product = entry.getKey();
+            Integer amount = entry.getValue();
+            product.reduceStock(amount);
+        }
         return orders.put(order.getId(), order);
     }
 
@@ -84,5 +82,13 @@ public class ECommercePlatform {
 
     public List<Order> getListOfOrders() {
         return orders.values().stream().toList();
+    }
+
+    public List<Product> makeRecommendations(@NonNull Integer userId) throws ItemNotFoundException {
+        User user = getUserById(userId);
+        return user.getHistory().entrySet().stream()
+                .sorted(Map.Entry.<Product, Integer>comparingByValue().reversed())
+                .map(Map.Entry::getKey)
+                .toList();
     }
 }
