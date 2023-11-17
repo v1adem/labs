@@ -7,7 +7,6 @@ import lombok.ToString;
 import java.util.Map;
 
 @Getter
-@ToString
 public class Order {
     private final Integer id;
     private final Integer userId;
@@ -26,5 +25,10 @@ public class Order {
         {
             totalPrice += product.getPrice() * orderDetails.get(product);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Order id - " + id + " | userId - " + userId + "\n| Order details - " + orderDetails + "\n| Total price - " + totalPrice;
     }
 }

@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.Optional;
 
 @Getter
-@ToString
 public class User {
     private final Integer id;
     private final String username;
@@ -44,5 +43,10 @@ public class User {
 
     public void updateHistory(@NonNull Order order){
         order.getOrderDetails().forEach((product, amount) -> history.merge(product, amount, Integer::sum));
+    }
+
+    @Override
+    public String toString() {
+        return "User - " + username + " | id - " + id + "\n\tCart " + cart + "\n\tHistory " + history;
     }
 }
