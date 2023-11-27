@@ -5,11 +5,18 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Arrays;
+import java.util.OptionalDouble;
+
 @Getter
 public class CityYearWeather {
     @Setter
     @JsonIgnoreProperties
-    public City city;
+    private City city;
     @JsonProperty("daily")
-    public YearWeather weather;
+    private YearWeather weather;
+    @JsonIgnoreProperties
+    private double avgYearTemp = Arrays.stream(weather.getAvgTempByDay()).average().getAsDouble();
+    @JsonIgnoreProperties
+    private double avgYearPrecipitation = Arrays.stream(weather.getPrecipitationsByDay()).average().getAsDouble();
 }

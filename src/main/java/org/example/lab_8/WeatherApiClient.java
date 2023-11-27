@@ -1,9 +1,9 @@
 package org.example.lab_8;
 
-import com.fasterxml.jackson.databind.DeserializationConfig;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jetbrains.annotations.NotNull;
+import java.time.LocalDate;
 
 import java.io.IOException;
 import java.net.URI;
@@ -24,8 +24,8 @@ public class WeatherApiClient {
         Arrays.stream(cityNames).forEach(cityName -> {
             try {
                 HttpRequest request = HttpRequest.newBuilder()
-                        .uri(new URI("https://geocoding-api.open-meteo.com/v1/search?name="
-                                + cityName + "&count=10&language=en&format=json"))
+                        .uri(new URI("https://geocoding-api.open-meteo.com/v1/search?name=" +
+                                cityName + "&count=10&language=en&format=json"))
                         .build();
 
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -39,14 +39,17 @@ public class WeatherApiClient {
         return cities;
     }
 
-    public static CityYearWeather getYearWeather(@NotNull City city) throws IOException, InterruptedException {
+    public static CityYearWeather getCityYearWeather(@NotNull City city) throws IOException, InterruptedException {
+        String startDate = LocalDate.now().minusMonths(12).toString();
+        String endDate = LocalDate.now().toString();
+
         ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://archive-api.open-meteo.com/v1/archive?" +
                 "latitude=" + city.getLatitude() +
                 "&longitude=" + city.getLongitude() +
-                "&start_date=2022-10-31" +
-                "&end_date=2023-11-01" +
+                "&start_date=" + startDate +
+                "&end_date=" + endDate +
                 "&daily=temperature_2m_mean,precipitation_sum")).build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
